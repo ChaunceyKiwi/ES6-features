@@ -31,19 +31,29 @@
 //     return (x + y) * a.length;
 // }
 // console.log(f2(1, 2, "Hello", true, 7) === 9);
-//
-/* Spreading of elements of an iterable collection (like an array or even a string)
- * into both literal elements and individual function parameters */
-var params = ["hello", true, 7];
-var other = [1, 2, ...params];
-console.log(other);
-function f3(x, y, ...a) {
-    return (x + y) * a.length;
-}
-console.log(f3(1, 2,...params) === 9);
-var str = "foo";
-var chars = [...str];
-console.log(chars);
+
+// /* Spreading of elements of an iterable collection (like an array or even a string)
+//  * into both literal elements and individual function parameters */
+// var params = ["hello", true, 7];
+// var other = [1, 2, ...params];
+// console.log(other);
+// function f3(x, y, ...a) {
+//     return (x + y) * a.length;
+// }
+// console.log(f3(1, 2,...params) === 9);
+// var str = "foo";
+// var chars = [...str];
+// console.log(chars);
+
+// /* Template Literals */
+// /* String interpolation */
+// let customer = {name : "Foo"};
+// let card = {amount: 7, product: "Bar", unitprice: 42};
+// var message = `Hello ${customer.name},
+// want to buy ${card.amount} ${card.product} for
+// a total of ${card.amount * card.unitprice} buck?`;
+// console.log(message);
+
 
 
 /************************ Other ******************************/
