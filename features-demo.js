@@ -54,7 +54,19 @@
 // a total of ${card.amount * card.unitprice} buck?`;
 // console.log(message);
 
+/* Enhanced Object Properties */
+/* Property Shorthand */
+let a = 'foo', b = 42, c = {};
+let obj1 = {a, b , c};
+console.log(obj1);
 
+/* Computed Property Names */
+function quux() {return "StringFromFunction";}
+let obj2 = {
+    foo: "bar",
+    ["Hi" + quux()]: 42
+};
+console.log(obj2);
 
 /************************ Other ******************************/
 // /* Type conversion */
