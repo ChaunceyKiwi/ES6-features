@@ -104,6 +104,60 @@
 // var [a = 1, b = 2, c = 3, d] = list;
 // console.log(a === 7, b === 42, c === 3, d === undefined);
 
+// /* Class */
+// class Shape {
+//     constructor (id, x, y) {
+//         this.id = id;
+//         this.move(x, y);
+//     }
+//     move(x, y) {
+//         this.x = x;
+//         this.y = y;
+//     }
+//     toString() {
+//         return `Shape($(this.id))`
+//     }
+// }
+//
+// class Rectangle extends Shape {
+//     constructor(id, x, y, width, height) {
+//         super(id, x, y);
+//         this.width = width;
+//         this.height = height;
+//     }
+//     toString() {
+//         return "Rectangle >" + super.toString();
+//     }
+//     static defaultRectangle() {
+//         return new Rectangle("default", 0, 0, 200, 300);
+//     }
+//     get area() {
+//         return this.width * this.height;
+//     }
+// }
+// class Circle extends Shape {
+//     constructor(id, x, y , radius) {
+//         super(id, x, y);
+//         this.radius = radius;
+//     }
+//     toString() {
+//         return "Circle >" + super.toString();
+//     }
+//     static defaultCircle() {
+//         return new Circle("default", 0, 0, 100);
+//     }
+// }
+//
+// let defRectangle = Rectangle.defaultRectangle();
+// let defCircle = Circle.defaultCircle();
+// console.log(defCircle.radius);
+// console.log(defRectangle.width);
+// console.log(defRectangle.height);
+// console.log(defRectangle.area);
+
+
+
+
 /************************ Other ******************************/
 // /* Type conversion */
 // var a = 1;
