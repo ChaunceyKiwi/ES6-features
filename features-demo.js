@@ -155,8 +155,32 @@
 // console.log(defRectangle.height);
 // console.log(defRectangle.area);
 
+// /* Symbol Type */
+// console.log(Symbol("foo") !== Symbol("foo"));
+// console.log(Symbol.for("app.foo") === Symbol.for("app.foo"));
 
-
+// /* Iterators */
+// /* Support iterable protocol to allow objects to customize their iteration behaviour.
+//  * Additionally, support "iterator" protocol to produce sequence of values (either finite or infinite).
+//   * Finally, provide convenient of operator to iterate over akk values of an iterable object */
+// let fabonacci = {
+//     [Symbol.iterator]() {
+//         let pre = 0, cur = 1;
+//         return {
+//             next() {
+//                 [pre, cur] = [cur, pre + cur];
+//                 return {done: false, value: cur};
+//             }
+//         };
+//     }
+// };
+//
+// for (let n of fabonacci) {
+//     if (n > 1000) {
+//         break;
+//     }
+//     console.log(n);
+// }
 
 /************************ Other ******************************/
 // /* Type conversion */
