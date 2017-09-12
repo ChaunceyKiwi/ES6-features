@@ -229,6 +229,29 @@
 // let numbers = [...fibonacci(1000)];
 // let [n1, n2, n3, ...others] = fibonacci(1000);
 
+/* Map/Set & WeakMap/WeakSet */
+// /* Set Data-Structure */
+// let s = new Set();
+// s.add("hello").add("goodbye").add("hello");
+// console.log(s.size === 2);
+// console.log(s.has("hello") === true);
+// for (let key of s.values()) {
+//     console.log(key);
+// }
+
+// /* Map Data-Structure */
+// let m = new Map();
+// let s = "world";
+// m.set("hello", 42);
+// m.set(s, 34);
+// console.log(m.get(s) === 34);
+// console.log(m.size === 2);
+// for (let [key, val] of m.entries()) {
+//     console.log(key + " = " + val);
+// }
+
+
+
 /************************ Other ******************************/
 // /* Type conversion */
 // var a = 1;
