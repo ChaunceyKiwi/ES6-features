@@ -54,19 +54,55 @@
 // a total of ${card.amount * card.unitprice} buck?`;
 // console.log(message);
 
-/* Enhanced Object Properties */
-/* Property Shorthand */
-let a = 'foo', b = 42, c = {};
-let obj1 = {a, b , c};
-console.log(obj1);
+// /* Enhanced Object Properties */
+// /* Property Shorthand */
+// let a = 'foo', b = 42, c = {};
+// let obj1 = {a, b , c};
+// console.log(obj1);
+//
+// /* Computed Property Names */
+// function quux() {return "StringFromFunction";}
+// let obj2 = {
+//     foo: "bar",
+//     ["Hi" + quux()]: 42
+// };
+// console.log(obj2);
 
-/* Computed Property Names */
-function quux() {return "StringFromFunction";}
-let obj2 = {
-    foo: "bar",
-    ["Hi" + quux()]: 42
-};
-console.log(obj2);
+// /* Destructing Assignment */
+// /* Array Matching */
+// let list = [1, 2, 3];
+// let [a, , b] = list;
+// console.log([a, b]);
+// console.log([b, a]);
+// [a, b] = [b, a];
+// console.log([a, b]);
+// console.log([b, a]);
+
+// /* Object and Array matching */
+// let obj = {a : 1};
+// let list = [1];
+// let {a, b = 2} = obj;
+// let [x, y =2] = list;
+// console.log(a, b, x, y);
+//
+// /* Parameter Context Matching */
+// function f([name, val]) {
+//     console.log(name, val);
+// }
+// function g({name: n, val: v}) {
+//     console.log(n, v);
+// }
+// function h({name, val}) {
+//     console.log(name, val);
+// }
+// f(["bar", 42]);
+// g({name: "foo", val: 7});
+// h({name: "bar", val: 42});
+
+// /* Fail-Soft destructing, optionally with defaults */
+// var list = [7, 42];
+// var [a = 1, b = 2, c = 3, d] = list;
+// console.log(a === 7, b === 42, c === 3, d === undefined);
 
 /************************ Other ******************************/
 // /* Type conversion */
